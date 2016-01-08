@@ -3,12 +3,12 @@
 . settings.sh
 
 for SCALA_VERSION in ${SCALA_VERSIONS}; do
-    docker push confluent/platform-${SCALA_VERSION}
+    docker push drmaas/platform-${SCALA_VERSION}
 done
-docker push confluent/platform
+docker push drmaas/platform
 
-docker push confluent/zookeeper
-docker push confluent/kafka
-docker push confluent/schema-registry
-docker push confluent/rest-proxy
-docker push confluent/tools
+docker push drmaas/zookeeper
+docker push drmaas/kafka
+docker push drmaas/schema-registry
+docker push drmaas/rest-proxy
+docker push drmaas/tools
